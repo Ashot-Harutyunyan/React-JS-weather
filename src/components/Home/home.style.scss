@@ -1,0 +1,27 @@
+.home-container {
+  width: 90%;
+  margin: 50px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.home-item-container {
+  position: relative;
+  cursor: pointer;
+  p {
+    position: absolute;
+    z-index: 1;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    top: 10px;
+    left: 10px;
+  }
+}
+.home-img-container {
+  position: relative;
+  width: 300px;
+  height: 200px;
+}

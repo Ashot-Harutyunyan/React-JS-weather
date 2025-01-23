@@ -1,0 +1,10 @@
+.weather-chart-components {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+.weather-chart-loading {
+  margin-top: 50px;
+  color: #a19a9c;
+  font-size: clamp(15px, 3.5vw, 35px);
+}
