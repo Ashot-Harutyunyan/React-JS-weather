@@ -23,3 +23,11 @@ a {
   width: max-content;
   margin-bottom: 50px;
 }
+.container-icon-back {
+  width: 90%;
+  margin: 0px auto 25px auto;
+}
+.icon-back {
+  font-size: clamp(30px, 5vw, 50px);
+  color: black;
+}

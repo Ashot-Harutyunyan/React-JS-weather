@@ -3,6 +3,7 @@ import { FcSearch } from "react-icons/fc"
 import { useEffect, useState, useRef } from 'react'
 import axios from 'axios'
 import { Link } from 'react-router-dom'
+import { IoIosArrowRoundBack } from "react-icons/io"
 
 const API_KEY = "11e036604edfb82404e8080b2feeaec7"
 
@@ -46,6 +47,9 @@ function Search() {
   },[value])
 
   return (<>
+      <div className='container-icon-back'>
+        <Link to='..'><IoIosArrowRoundBack className='icon-back'/></Link>
+      </div>
       <div className="container-search">
          <div className='container-search-input'>
            <FcSearch className='search-icon'/>

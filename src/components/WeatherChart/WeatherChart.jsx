@@ -1,8 +1,9 @@
 import './WeatherChart.style.scss'
 import { useEffect, useState } from "react"
 import axios from "axios"
-import { useParams, Navigate } from "react-router-dom"
+import { useParams, Navigate, Link } from "react-router-dom"
 import Chart from "../Chart/Chart"
+import { IoIosArrowRoundBack } from "react-icons/io"
 
 const API_KEY = "11e036604edfb82404e8080b2feeaec7"
 
@@ -39,7 +40,11 @@ const WeatherChart = () => {
   if(error) return <Navigate to="/error" replace/>
   
 
-  return (
+  return (<>
+    <div className='container-icon-back'>
+      <Link to='..'><IoIosArrowRoundBack className='icon-back'/></Link>
+    </div>
+
     <div className='weather-chart-components'>
       <h2>Weather forecast {city}</h2>
       {data.length > 0
@@ -47,7 +52,7 @@ const WeatherChart = () => {
           : <p className='weather-chart-loading'>Loading...</p>
       }
     </div>
-  )
+  </>)
 }
 
 export default WeatherChart
