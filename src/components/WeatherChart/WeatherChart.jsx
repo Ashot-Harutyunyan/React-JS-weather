@@ -5,7 +5,7 @@ import { useParams, Navigate, Link } from "react-router-dom"
 import Chart from "../Chart/Chart"
 import { IoIosArrowRoundBack } from "react-icons/io"
 
-const API_KEY = "11e036604edfb82404e8080b2feeaec7"
+const API_KEY = import.meta.env.VITE_API_KEY;
 
 const WeatherChart = () => {
 
